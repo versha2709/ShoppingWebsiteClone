@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "https://www.forestessentialsindia.com/beauty-body-oil-soundarya-new.html?msclkid=598f952d772a17b3d050f10147d58161&utm_source=bing&utm_medium=cpc&utm_campaign=ET-003-Bing-Shopping-India&utm_term=4588330742736683&utm_content=ET-003-A01-All-Products";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com:443/aclk?ld=e8xqVwqwM1H3aiKKyasUSyxzVUCUyWggzTvMrAFRbJ25LoOcygUZ04X9rgpmrHcIzmPJHrVqCK_RCQjWe5ijlyYlTjsGqYNkHMBkMhMj7NmRqudo2XBwir9LaXoswIc-4fTQ_3yATR47bIIsxXgmvv6TlYZtNhyyUZf5JmFx-SqAviWNW4-kD0L1MKyLIJteWyU-jQcA&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cuZm9yZXN0ZXNzZW50aWFsc2luZGlhLmNvbSUyZmJlYXV0eS1ib2R5LW9pbC1zb3VuZGFyeWEtbmV3Lmh0bWwlM2Ztc2Nsa2lkJTNkNTk4Zjk1MmQ3NzJhMTdiM2QwNTBmMTAxNDdkNTgxNjElMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RFVC0wMDMtQmluZy1TaG9wcGluZy1JbmRpYSUyNnV0bV90ZXJtJTNkNDU4ODMzMDc0MjczNjY4MyUyNnV0bV9jb250ZW50JTNkRVQtMDAzLUEwMS1BbGwtUHJvZHVjdHM&amp;rlid=598f952d772a17b3d050f10147d58161&amp;ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>
