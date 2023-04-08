@@ -1,0 +1,43 @@
+.Flex-all-center
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn
+{
+    padding: 5px 10px;
+    color: white;
+    background-color: #2874f0;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.my-1
+{
+    margin: 2px 0;
+}
+
+.my-2
+{
+    margin: 20px 0;
+}
+
+
+
+.text-center
+{
+    text-align: center;
+}
+

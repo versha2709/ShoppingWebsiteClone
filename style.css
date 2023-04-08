@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    
+    background-color: #2874f0;
+}
+
+nav
+{
+    display: flex;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo img
+{
+    width: 120px;
+    padding: 0 25px ;
+}
+
+nav ul
+{
+    height: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li
+{
+    padding: 0 20px;
+    list-style: none; 
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover
+{
+    color: rgb(20, 0, 122);
+   font-weight: bolder ;
+
+}
+
+.search
+{
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 80px;
+}
+
+.search input
+{
+    width: 30vw;
+    height: 26px;
+    border-radius: 3px;
+    padding: 0 20px;
+    margin: 15px;
+
+    
+}
+
+.container
+{
+      min-height: calc(100vh - 8vh - 5vh);
+}
+
+.slider
+{
+    margin: 12px auto;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.slider img
+{
+    width: 1200px;
+    height: 400px;
+}
+
+
+.card
+{
+    max-width: 90vw;
+    margin: 40px;
+}
+
+.cards
+{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* overflow: scroll; */
+    overflow: hidden;
+
+}
+
+.card-item
+{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.card h2
+{
+    /* font-family: */
+}
+
+.card-item img
+{
+    width: 130px;
+    height: 130px;
+
+}
+
+footer
+{
+    height: 5vh;
+    background-color: #012b45;
+    color: white; 
+    font-family:'Merriweather', serif;
+}
